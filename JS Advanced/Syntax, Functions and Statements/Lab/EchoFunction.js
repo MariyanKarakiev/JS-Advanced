@@ -5,5 +5,3 @@ function echo(inputString){
     console.log(inputString);
 }
 
-echo('Hello, JavaScript!');
-
