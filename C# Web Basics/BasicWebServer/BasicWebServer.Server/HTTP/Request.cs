@@ -11,7 +11,7 @@ namespace BasicWebServer.Server.HTTP
     {
         public Method Method { get; private set; }
         public string Url { get; private set; }
-        public HeaderCollection Header { get; private set; }
+        public HeaderCollection Headers { get; private set; }
         public string Body { get; set; }
 
 
@@ -22,11 +22,11 @@ namespace BasicWebServer.Server.HTTP
             var firstLine = lines.First().Split(' ');
 
             var method = ParseMethod(firstLine[0]);
-            var url = firstLine[1];
+            var url = firstLine[2];
 
-            HeaderCollection header = ParseHeaders(lines.Skip(1));
+            HeaderCollection headers = ParseHeaders(lines.Skip(1));
 
-            var bodyLines = lines.Skip(header.Count+2);
+            var bodyLines = lines.Skip(headers.Count + 2);
 
             string body = string.Join("\r\n", bodyLines);
 
@@ -34,7 +34,7 @@ namespace BasicWebServer.Server.HTTP
             {
                 Method = method,
                 Url = url,
-                Header = header,
+                Headers = headers,
                 Body = body
             };
         }
@@ -50,7 +50,7 @@ namespace BasicWebServer.Server.HTTP
                     break;
                 }
 
-                var parts = line.Split(':');
+                var parts = line.Split(':', 2);
 
                 if (parts.Length != 2)
                 {
@@ -65,7 +65,7 @@ namespace BasicWebServer.Server.HTTP
         {
             try
             {
-                return Enum.Parse<Method>(method);
+                return Enum.Parse<Method>(method.ToUpper());
             }
             catch (Exception)
             {

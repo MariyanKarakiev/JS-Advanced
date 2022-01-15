@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cc55cd1b-4f8c-43fa-b598-78bfd2f38ab0": {
+      "ProjectGuid": "cc55cd1b-4f8c-43fa-b598-78bfd2f38ab0",
+      "DisplayName": "BasicWebServer.Demo",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "7eaaf605-4c89-499a-b93b-bde1e25c3aa1": {
+      "ProjectGuid": "7eaaf605-4c89-499a-b93b-bde1e25c3aa1",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 1
+    },
+    "da8b7fab-8f67-4445-b638-f03e43f06fbd": {
+      "ProjectGuid": "da8b7fab-8f67-4445-b638-f03e43f06fbd",
+      "DisplayName": "BasicWebServer.Server",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
