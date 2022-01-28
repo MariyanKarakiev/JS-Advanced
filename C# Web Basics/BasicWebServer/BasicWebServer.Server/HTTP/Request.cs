@@ -12,17 +12,17 @@ namespace BasicWebServer.Server.HTTP
         public Method Method { get; private set; }
         public string Url { get; private set; }
         public HeaderCollection Headers { get; private set; }
-        public string Body { get; set; }
+        public string Body { get; private set; }
 
 
-        public Request Parse(string request)
+        public static Request Parse(string request)
         {
             var lines = request.Split("\r\n");
 
             var firstLine = lines.First().Split(' ');
 
             var method = ParseMethod(firstLine[0]);
-            var url = firstLine[2];
+            var url = firstLine[1];
 
             HeaderCollection headers = ParseHeaders(lines.Skip(1));
 
@@ -61,11 +61,11 @@ namespace BasicWebServer.Server.HTTP
             return headers;
         }
 
-        public Method ParseMethod(string method)
+        public static Method ParseMethod(string method)
         {
             try
             {
-                return Enum.Parse<Method>(method.ToUpper());
+                return (Method)Enum.Parse(typeof(Method), method, true);
             }
             catch (Exception)
             {
