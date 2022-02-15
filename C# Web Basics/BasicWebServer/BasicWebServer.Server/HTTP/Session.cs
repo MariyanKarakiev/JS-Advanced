@@ -9,8 +9,10 @@ namespace BasicWebServer.Server.HTTP
 {
     public class Session
     {
-        public const string SessionName = "MyWebServerSID";
-        public const string SessionType = "CurrentDate";
+        public const string SessionCookieName = "MyWebServerSID";
+        public const string SessionCurrentDateKey = "CurrentDate";
+        public const string SessionUserKey = "AuthenticatedUserId";
+
 
         private Dictionary<string, string> data;
 
@@ -22,7 +24,7 @@ namespace BasicWebServer.Server.HTTP
             data = new Dictionary<string, string>();
         }
 
-        public string Id { get; private set; }
+        public string Id { get; init; }
 
         public string this[string key]
         {
@@ -30,6 +32,8 @@ namespace BasicWebServer.Server.HTTP
             set => data[key] = value;
         }
 
+        public void Clear()
+            => data.Clear();
         public bool ContainsKey(string key)
             => data.ContainsKey(key);
     }
