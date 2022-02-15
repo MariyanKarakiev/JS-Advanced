@@ -1,4 +1,5 @@
-﻿using BasicWebServer.Server.HTTP.Enums;
+﻿using BasicWebServer.Server.HTTP.Cookies;
+using BasicWebServer.Server.HTTP.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,39 +14,67 @@ namespace BasicWebServer.Server.HTTP
         public Method Method { get; private set; }
         public string Url { get; private set; }
         public HeaderCollection Headers { get; private set; }
+        public CookieCollection Cookies { get; private set; }
         public string Body { get; private set; }
         public IReadOnlyDictionary<string, string> Form { get; private set; }
+
 
         public static Request Parse(string request)
         {
             var lines = request.Split("\r\n");
-
-            var firstLine = lines.First().Split(' ');
+            var firstLine = lines.First().Split(" ");
 
             var method = ParseMethod(firstLine[0]);
             var url = firstLine[1];
 
-            HeaderCollection headers = ParseHeaders(lines.Skip(1));
+            var headers = ParseHeaders(lines.Skip(1));
+            var cookies = ParseCookies(headers);
 
-            var bodyLines = lines.Skip(headers.Count + 2);
+            var bodyLines = lines.Skip(headers.Count + 2).ToArray();
 
-            string body = string.Join("\r\n", bodyLines);
-           
+            var body = string.Join("\r\n", bodyLines);
+
             var form = ParseForm(headers, body);
 
-            return new Request()
+
+            return new Request
             {
                 Method = method,
                 Url = url,
                 Headers = headers,
+                Cookies = cookies,
                 Body = body,
                 Form = form
             };
         }
 
+        private static CookieCollection ParseCookies(HeaderCollection headers)
+        {
+            var cookieCollection = new CookieCollection();
+
+            if (headers.Contains(Header.Cookie))
+            {
+                var cookieHeader = headers[Header.Cookie];
+
+                var allCookies = cookieHeader.Split(';');
+
+                foreach (var cookieText in allCookies)
+                {
+                    var cookieParts = cookieText.Split('=');
+
+                    var cookieName = cookieParts[0].Trim();
+                    var cookieValue = cookieParts[1].Trim();
+
+                    cookieCollection.Add(cookieName, cookieValue);
+                }
+            }
+
+            return cookieCollection;
+        }
+
         public static HeaderCollection ParseHeaders(IEnumerable<string> lines)
         {
-            var headers = new HeaderCollection();
+            var headerCollection = new HeaderCollection();
 
             foreach (var line in lines)
             {
@@ -54,15 +83,16 @@ namespace BasicWebServer.Server.HTTP
                     break;
                 }
 
-                var parts = line.Split(':', 2);
+                var headersParts = line.Split(':', 2);
 
-                if (parts.Length != 2)
+                if (headersParts.Length != 2)
                 {
                     throw new InvalidOperationException("Request headers is not valid");
                 }
-                headers.Add(parts[0], parts[1].Trim());
+          
+                headerCollection.Add(headersParts[0], headersParts[1].Trim());
             }
-            return headers;
+            return headerCollection;
         }
 
         public static Method ParseMethod(string method)
@@ -81,12 +111,12 @@ namespace BasicWebServer.Server.HTTP
         {
             var formCollection = new Dictionary<string, string>();
 
-            if(headers.Contains(Header.ContentType) 
+            if (headers.Contains(Header.ContentType)
                 && headers[Header.ContentType] == ContentType.FormUrlEncoded)
             {
                 var parsedResult = ParseFormData(body);
 
-                foreach (var (name,value) in parsedResult)
+                foreach (var (name, value) in parsedResult)
                 {
                     formCollection.Add(name, value);
                 }
@@ -105,6 +135,6 @@ namespace BasicWebServer.Server.HTTP
              part => part[1],
              StringComparer.InvariantCultureIgnoreCase);
 
-        
+
     }
 }

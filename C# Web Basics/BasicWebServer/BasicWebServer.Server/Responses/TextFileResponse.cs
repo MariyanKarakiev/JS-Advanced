@@ -10,11 +10,12 @@ namespace BasicWebServer.Server.Responses
     public class TextFileResponse : Response
     {
         public string FileName { get; init; }
-
+         
         public TextFileResponse(string fileName)
             : base(StatusCode.OK)
         {
             FileName = fileName;
+
             Headers.Add(Header.ContentType, ContentType.PlainText);
         }
 
