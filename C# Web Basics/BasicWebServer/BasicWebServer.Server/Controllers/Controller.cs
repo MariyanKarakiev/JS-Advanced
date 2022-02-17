@@ -1,6 +1,7 @@
 ﻿using BasicWebServer.Server.HTTP;
 using BasicWebServer.Server.HTTP.Cookies;
 using BasicWebServer.Server.Responses;
+using System.Runtime.CompilerServices;
 
 namespace BasicWebServer.Server.Controllers
 {
@@ -13,6 +14,8 @@ namespace BasicWebServer.Server.Controllers
             Request = request;
         }
 
+        private string GetControllerName()
+            => GetType().Name.Replace(nameof(Controller),string.Empty);
 
         protected Response Text(string text) => new TextResponse(text);
         protected Response Html(string text) => new HtmlResponse(text);
@@ -35,7 +38,9 @@ namespace BasicWebServer.Server.Controllers
         protected Response NotFound() => new NotFoundResponse();
         protected Response Redirect(string location) => new RedirectResponse(location);
         protected Response File(string fileName) => new FileResponse(fileName);
-
+        protected Response View([CallerMemberName] string viewName = "")
+            => new ViewResponse(viewName, GetControllerName());
+       
 
     }
 }
