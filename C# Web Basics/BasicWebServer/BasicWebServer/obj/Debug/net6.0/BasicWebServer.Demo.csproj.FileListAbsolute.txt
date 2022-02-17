@@ -16,3 +16,5 @@ D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\obj\Debug\net6.0\
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\obj\Debug\net6.0\ref\BasicWebServer.Demo.dll
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\obj\Debug\net6.0\BasicWebServer.Demo.pdb
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\obj\Debug\net6.0\BasicWebServer.Demo.genruntimeconfig.cache
+D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\test.pdf
+D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\test.txt

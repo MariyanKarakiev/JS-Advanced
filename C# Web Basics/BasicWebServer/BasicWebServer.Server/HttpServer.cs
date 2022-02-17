@@ -76,7 +76,7 @@ namespace BasicWebServer.Server
             if (!sessionExist)
             {
                 request.Session[Session.SessionCurrentDateKey] = DateTime.Now.ToString();
-               
+
                 response.Cookies.Add(Session.SessionCookieName, request.Session.Id);
             }
         }
@@ -84,6 +84,12 @@ namespace BasicWebServer.Server
         {
             var responseBytes = Encoding.UTF8.GetBytes(response.ToString());
 
+            if (response.FileContent != null)
+            {
+                responseBytes = responseBytes
+                    .Concat(response.FileContent)
+                    .ToArray();
+            }
             await networkStream.WriteAsync(responseBytes);
 
         }

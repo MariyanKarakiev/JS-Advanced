@@ -18,6 +18,7 @@ namespace BasicWebServer.Server.HTTP
         }
 
         public string Body { get; set; }
+        public byte[] FileContent { get; set; }
         public StatusCode StatusCode { get; init; }
         public HeaderCollection Headers { get; } = new HeaderCollection();
         public CookieCollection Cookies { get; } = new CookieCollection();

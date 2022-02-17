@@ -7,41 +7,47 @@ namespace BasicWebServer.Server.Routing
 {
     public class RoutingTable : IRoutingTable
     {
-        private readonly Dictionary<Method, Dictionary<string, Response>> routes;
+        private readonly Dictionary<Method, Dictionary<string, Func<Request, Response>>> routes;
 
-        public RoutingTable() =>
-                 this.routes = new()
-                 {
-                     [Method.Get] = new(),
-                     [Method.Post] = new(),
-                     [Method.Put] = new(),
-                     [Method.Delete] = new()
-                 };
-
-        public IRoutingTable Map(string url, Method method, Response response)
-        => method switch
+        public RoutingTable() => this.routes = new()
         {
-            Method.Get => MapGet(url, response),
-            Method.Post => MapPost(url, response),
-            _ => throw new InvalidOperationException($"Method '{method}' is not supported")
+            [Method.Get] = new(StringComparer.InvariantCultureIgnoreCase),
+            [Method.Post] = new(StringComparer.InvariantCultureIgnoreCase),
+            [Method.Put] = new(StringComparer.InvariantCultureIgnoreCase),
+            [Method.Delete] = new(StringComparer.InvariantCultureIgnoreCase)
         };
 
-        public IRoutingTable MapGet(string url, Response response)
+        public IRoutingTable Map(Method method, string path, Func<Request, Response> responseFunction)
         {
-            Guard.AgainstNull(url, nameof(url));
-            Guard.AgainstNull(response, nameof(response));
+            Guard.AgainstNull(path, nameof(path));
+            Guard.AgainstNull(responseFunction, nameof(responseFunction));
 
-            this.routes[Method.Get][url] = response;
+            routes[method][path] = responseFunction;
+
+            switch (method)
+            {
+                case Method.Get:
+                    return MapGet(path, responseFunction);
+                case Method.Post:
+                    return MapPost(path, responseFunction);
+                case Method.Put:
+                case Method.Delete:
+                default:
+                    throw new ArgumentOutOfRangeException
+                        ($"The method {nameof(method)} is not supported!");
+            }
+        }
+
+        public IRoutingTable MapGet(string path, Func<Request, Response> responseFunction)
+        {
+            routes[Method.Get][path] = responseFunction;
 
             return this;
         }
 
-        public IRoutingTable MapPost(string url, Response response)
+        public IRoutingTable MapPost(string path, Func<Request, Response> responseFunction)
         {
-            Guard.AgainstNull(url, nameof(url));
-            Guard.AgainstNull(response, nameof(response));
-
-            this.routes[Method.Post][url] = response;
+            routes[Method.Post][path] = responseFunction;
 
             return this;
         }
@@ -51,13 +57,15 @@ namespace BasicWebServer.Server.Routing
             var requestMethod = request.Method;
             var requestUrl = request.Url;
 
-            if (!this.routes.ContainsKey(requestMethod) 
+            if (!this.routes.ContainsKey(requestMethod)
                 || !this.routes[requestMethod].ContainsKey(requestUrl))
             {
                 return new NotFoundResponse();
             }
 
-            return this.routes[requestMethod][requestUrl];
+            var responseFunction = this.routes[requestMethod][requestUrl];
+
+            return responseFunction(request);
         }
     }
 }
