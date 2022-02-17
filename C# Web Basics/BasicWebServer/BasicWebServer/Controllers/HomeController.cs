@@ -1,4 +1,5 @@
-﻿using BasicWebServer.Server.HTTP;
+﻿using BasicWebServer.Demo.ViewModels;
+using BasicWebServer.Server.HTTP;
 using BasicWebServer.Server.HTTP.Cookies;
 using System;
 using System.Collections.Generic;
@@ -30,48 +31,25 @@ namespace BasicWebServer.Server.Controllers
                 return html.Substring(0, 2000);
             }
         }
-        //private static async Task DownloadSitesAsTextFile(string fileName, string[] urls)
-        //{
-        //    var downloads = new List<Task<string>>();
-
-        //    foreach (var url in urls)
-        //    {
-        //        downloads.Add(DownloadWebSiteContent(url));
-        //    }
-
-        //    var responses = Task.WhenAll(downloads).Result;
-
-        //    var responsesString = string
-        //        .Join(Environment.NewLine + new string('-', 100), responses);
-
-        //    await File.WriteAllTextAsync(fileName, responsesString);
-        //}
 
         public Response Index() => Text("Hello from the server!");
         public Response Redirect() => Redirect("https://softuni.org/");
         public Response Html() => View();
         public Response HtmlFormPost()
         {
-           var formData = new StringBuilder();
+            var name = Request.Form["Name"];
+            var age = Request.Form["Age"];
 
-            foreach (var (key, value) in Request.Form)
+            var model = new FormViewModel()
             {
-                formData.AppendLine($"{key} - {value}");             
-            }
+                Name = name,
+                Age = int.Parse(age)
+            };
 
-            return Text(formData.ToString());
+            return View(model);
         }
         public Response Content() => View();
-        public Response DownloadContent()
-        {
-            //DownloadSitesAsTextFile(
-            //    FileName,
-            //    new string[] { "https://softuni.bg/", "https://www.youtube.com/" }
-            //    )
-            //    .Wait();
-
-            return File(FileName);
-        }
+        public Response DownloadContent() => File(FileName);
         public Response Cookies()
         {
             var requestHasCookie = Request.Cookies.Any(c => c.Name != Server.HTTP.Session.SessionCookieName);
