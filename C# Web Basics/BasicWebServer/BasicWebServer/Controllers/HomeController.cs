@@ -1,4 +1,5 @@
 ﻿using BasicWebServer.Demo.ViewModels;
+using BasicWebServer.Server.Attributes;
 using BasicWebServer.Server.HTTP;
 using BasicWebServer.Server.HTTP.Cookies;
 using System;
@@ -32,9 +33,12 @@ namespace BasicWebServer.Server.Controllers
             }
         }
 
+        [HttpGet]
         public Response Index() => Text("Hello from the server!");
         public Response Redirect() => Redirect("https://softuni.org/");
         public Response Html() => View();
+       
+        [HttpPost]
         public Response HtmlFormPost()
         {
             var name = Request.Form["Name"];
