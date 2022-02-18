@@ -22,8 +22,6 @@ namespace BasicWebServer.Server.Routing
             Guard.AgainstNull(path, nameof(path));
             Guard.AgainstNull(responseFunction, nameof(responseFunction));
 
-            routes[method][path] = responseFunction;
-
             switch (method)
             {
                 case Method.Get:
@@ -40,6 +38,8 @@ namespace BasicWebServer.Server.Routing
 
         public IRoutingTable MapGet(string path, Func<Request, Response> responseFunction)
         {
+            Guard.AgainstDuplicatedKey(routes[Method.Get], path, "RoutingTable.Get");
+
             routes[Method.Get][path] = responseFunction;
 
             return this;
@@ -47,6 +47,8 @@ namespace BasicWebServer.Server.Routing
 
         public IRoutingTable MapPost(string path, Func<Request, Response> responseFunction)
         {
+            Guard.AgainstDuplicatedKey(routes[Method.Post], path, "RoutingTable.Post");
+
             routes[Method.Post][path] = responseFunction;
 
             return this;
@@ -66,6 +68,6 @@ namespace BasicWebServer.Server.Routing
             var responseFunction = this.routes[requestMethod][requestUrl];
 
             return responseFunction(request);
-        }
+        } 
     }
 }
