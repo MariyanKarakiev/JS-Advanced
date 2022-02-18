@@ -21,4 +21,4 @@ D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\Views\Home\Html.cshtml
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\Views\Home\HtmlFormPost.cshtml
 D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\Views\Home\Content.cshtml
-D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\Views\Users\Login.cshtml
+D:\SoftUni\SoftUni\C# Web Basics\BasicWebServer\BasicWebServer\bin\Debug\net6.0\Views\User\Login.cshtml

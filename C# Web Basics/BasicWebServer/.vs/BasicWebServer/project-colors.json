@@ -20,7 +20,12 @@
       "ProjectGuid": "da8b7fab-8f67-4445-b638-f03e43f06fbd",
       "DisplayName": "BasicWebServer.Server",
       "ColorIndex": 2
+    },
+    "d1fe6648-1a3f-45f9-ac6e-aae3b393cee2": {
+      "ProjectGuid": "d1fe6648-1a3f-45f9-ac6e-aae3b393cee2",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

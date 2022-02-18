@@ -1,4 +1,5 @@
-﻿using BasicWebServer.Server.HTTP;
+﻿using BasicWebServer.Server.Common;
+using BasicWebServer.Server.HTTP;
 using BasicWebServer.Server.Routing;
 using System.Net;
 using System.Net.Sockets;
@@ -12,6 +13,7 @@ namespace BasicWebServer.Server
         private readonly int port;
         private readonly TcpListener serverListener;
         private readonly RoutingTable routingTable;
+        public readonly ServiceCollection ServiceCollection;
 
         public HttpServer(string _ipAddress, int _port, Action<IRoutingTable> routingTableConfig)
         {
@@ -19,6 +21,7 @@ namespace BasicWebServer.Server
             port = _port;
             serverListener = new TcpListener(ipAddress, port);
             routingTableConfig(routingTable = new RoutingTable());
+            ServiceCollection = new ServiceCollection();
         }
 
         public HttpServer(int port, Action<IRoutingTable> routingTable)
@@ -51,7 +54,7 @@ namespace BasicWebServer.Server
 
                     Console.WriteLine(requestText);
 
-                    var request = Request.Parse(requestText);
+                    var request = Request.Parse(requestText, ServiceCollection);
 
                     var response = routingTable.MatchRequest(request);
                   

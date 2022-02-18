@@ -1,4 +1,5 @@
-﻿using BasicWebServer.Server.HTTP.Cookies;
+﻿using BasicWebServer.Server.Common;
+using BasicWebServer.Server.HTTP.Cookies;
 using BasicWebServer.Server.HTTP.Enums;
 using System;
 using System.Collections.Generic;
@@ -19,15 +20,19 @@ namespace BasicWebServer.Server.HTTP
         public HeaderCollection Headers { get; private set; }
         public CookieCollection Cookies { get; private set; }
         public IReadOnlyDictionary<string, string> Form { get; private set; }
+        public IReadOnlyDictionary<string, string> Query { get; private set; }
+        public static IServiceCollection ServiceCollection { get; private set; }
 
-
-        public static Request Parse(string request)
+        public static Request Parse(string request, IServiceCollection serviceCollection)
         {
+            ServiceCollection = serviceCollection;
+
             var lines = request.Split("\r\n");
             var firstLine = lines.First().Split(" ");
 
             var method = ParseMethod(firstLine[0]);
-            var url = firstLine[1];
+
+            (string url, Dictionary<string, string> query) = ParseUrl(firstLine[1]);
 
             var headers = ParseHeaders(lines.Skip(1));
             var cookies = ParseCookies(headers);
@@ -48,15 +53,44 @@ namespace BasicWebServer.Server.HTTP
                 Cookies = cookies,
                 Session = session,
                 Body = body,
-                Form = form
+                Form = form,
+                Query = query
             };
+        }
+
+        private static (string url, Dictionary<string, string> query) ParseUrl(string queryString)
+        {
+            string url = String.Empty;
+            Dictionary<string, string> query = new Dictionary<string, string>();
+
+            var parts = queryString.Split("?", 2);
+
+            if (parts.Length == 1)
+            {
+                url = parts[0];
+            }
+            else
+            {
+                var queryParams = parts[1].Split("&");
+
+                foreach (var pair in queryParams)
+                {
+                    var param = pair.Split('=');
+
+                    if (param.Length == 2)
+                    {
+                        query.Add(param[0], param[1]);
+                    }
+                }
+            }
+            return (url, query);
         }
 
         private static Session GetSession(CookieCollection cookies)
         {
-         var sessionId = cookies.Contains(Session.SessionCookieName)
-                ? cookies[Session.SessionCookieName]
-                : Guid.NewGuid().ToString();
+            var sessionId = cookies.Contains(Session.SessionCookieName)
+                   ? cookies[Session.SessionCookieName]
+                   : Guid.NewGuid().ToString();
 
             if (!Sessions.ContainsKey(sessionId))
             {

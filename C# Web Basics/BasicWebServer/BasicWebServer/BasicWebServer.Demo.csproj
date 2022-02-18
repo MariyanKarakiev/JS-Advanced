@@ -17,7 +17,7 @@
 	<ItemGroup>
 	  <Content Remove="Views\Home\Content.cshtml" />
 	  <Content Remove="Views\Home\Html.cshtml" />
-	  <Content Remove="Views\Users\Login.cshtml" />
+	  <Content Remove="Views\User\Login.cshtml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -37,7 +37,7 @@
 		<None Update="Views\Home\Html.cshtml">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-		<None Update="Views\Users\Login.cshtml">
+		<None Update="Views\User\Login.cshtml">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
