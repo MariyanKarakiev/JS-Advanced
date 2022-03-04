@@ -2,6 +2,8 @@ function solve(array) {
     let result = false;
     let sum = 0;
 
+    
+    
     array.reduce((acc, curr) => {
 
         let sum = (a, b) => a + b;
