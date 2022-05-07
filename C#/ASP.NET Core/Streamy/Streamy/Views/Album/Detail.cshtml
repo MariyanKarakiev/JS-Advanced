@@ -1,0 +1,55 @@
+﻿@using Streamy.Core.Models
+@model AlbumModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <div class="col-lg-auto">
+        <div class="col-lg-auto grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">@ViewData["Title"]</h4>
+                    <div class="card card-widget widget-user-2">
+                        <div class="widget-user-header bg-warning">
+                            <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src=@Model.ImageUrl alt="User Avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Artist</th>
+                                <th>ReleaseDate</th>
+                                <th>Genre</th>
+                                <th>Artist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>@Model.Title</th>
+                                <th>@Model.Artist.Name</th>
+                                <th>@Model.ReleaseDate</th>
+                                <th>@Model.Duration</th>
+                                <th>@Model.Artist.Name</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
