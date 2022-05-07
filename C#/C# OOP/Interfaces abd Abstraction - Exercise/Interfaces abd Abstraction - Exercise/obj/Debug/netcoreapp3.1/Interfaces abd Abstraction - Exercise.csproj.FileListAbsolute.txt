@@ -1,0 +1,14 @@
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.csproj.AssemblyReference.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.exe
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.deps.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.runtimeconfig.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\bin\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Interfaces abd Abstraction - Exercise\obj\Debug\netcoreapp3.1\Interfaces abd Abstraction - Exercise.genruntimeconfig.cache

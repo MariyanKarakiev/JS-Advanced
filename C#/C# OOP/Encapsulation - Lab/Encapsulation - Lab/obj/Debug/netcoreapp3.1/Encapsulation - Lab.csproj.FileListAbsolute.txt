@@ -1,0 +1,13 @@
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.exe
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.deps.json
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.runtimeconfig.json
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.dll
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\bin\Debug\netcoreapp3.1\Encapsulation - Lab.pdb
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.csprojAssemblyReference.cache
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.dll
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.pdb
+D:\SoftUni\C# OOP\Encapsulation - Lab\Encapsulation - Lab\obj\Debug\netcoreapp3.1\Encapsulation - Lab.genruntimeconfig.cache

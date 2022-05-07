@@ -1,0 +1,14 @@
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.exe
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.deps.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.runtimeconfig.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\bin\Debug\netcoreapp3.1\Border.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.csproj.AssemblyReference.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Border Control\obj\Debug\netcoreapp3.1\Border.genruntimeconfig.cache

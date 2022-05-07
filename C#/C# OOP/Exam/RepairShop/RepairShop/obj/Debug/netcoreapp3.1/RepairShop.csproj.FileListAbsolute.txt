@@ -1,0 +1,14 @@
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.exe
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.deps.json
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.runtimeconfig.json
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.dll
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.pdb
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.csproj.AssemblyReference.cache
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.dll
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.pdb
+D:\SoftUni\C# OOP\Exam\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.genruntimeconfig.cache

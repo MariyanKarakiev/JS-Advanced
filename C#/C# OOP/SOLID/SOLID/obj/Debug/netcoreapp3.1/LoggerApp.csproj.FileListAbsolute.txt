@@ -1,0 +1,14 @@
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.exe
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.deps.json
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.runtimeconfig.json
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.dll
+D:\SoftUni\C# OOP\SOLID\SOLID\bin\Debug\netcoreapp3.1\LoggerApp.pdb
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.csproj.AssemblyReference.cache
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.AssemblyInfo.cs
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.dll
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.pdb
+D:\SoftUni\C# OOP\SOLID\SOLID\obj\Debug\netcoreapp3.1\LoggerApp.genruntimeconfig.cache

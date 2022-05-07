@@ -1,0 +1,14 @@
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.csproj.AssemblyReference.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.exe
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.deps.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.runtimeconfig.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\bin\Debug\netcoreapp3.1\Military.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.dll
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.pdb
+D:\SoftUni\C# OOP\Interfaces abd Abstraction - Exercise\Military\obj\Debug\netcoreapp3.1\Military.genruntimeconfig.cache

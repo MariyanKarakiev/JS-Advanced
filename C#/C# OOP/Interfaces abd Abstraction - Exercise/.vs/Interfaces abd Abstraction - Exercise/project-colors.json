@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "064d4c0f-8440-451e-aba8-9348b966243d": {
+      "ProjectGuid": "064d4c0f-8440-451e-aba8-9348b966243d",
+      "DisplayName": "Interfaces abd Abstraction - Exercise",
+      "ColorIndex": 0
+    },
+    "fcdcb002-c770-4aa5-8b34-82aab926b1e6": {
+      "ProjectGuid": "fcdcb002-c770-4aa5-8b34-82aab926b1e6",
+      "DisplayName": "Telephony",
+      "ColorIndex": 1
+    },
+    "642d62a4-0af5-4e69-9add-ee3d7e854bf1": {
+      "ProjectGuid": "642d62a4-0af5-4e69-9add-ee3d7e854bf1",
+      "DisplayName": "Border",
+      "ColorIndex": 2
+    },
+    "477cc692-d820-4cc3-9636-a8c05f016803": {
+      "ProjectGuid": "477cc692-d820-4cc3-9636-a8c05f016803",
+      "DisplayName": "Military",
+      "ColorIndex": 3
+    },
+    "fe5c2745-3787-4dbf-bf8a-af196f4b8379": {
+      "ProjectGuid": "fe5c2745-3787-4dbf-bf8a-af196f4b8379",
+      "DisplayName": "Food Shortage",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,13 @@
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.csprojAssemblyReference.cache
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.AssemblyInfoInputs.cache
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.AssemblyInfo.cs
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.csproj.CoreCompileInputs.cache
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.exe
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.deps.json
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.runtimeconfig.json
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.runtimeconfig.dev.json
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.dll
+D:\SoftUni\C# OOP\Inheritence\Inheritence\bin\Debug\netcoreapp3.1\Inheritence.pdb
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.dll
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.pdb
+D:\SoftUni\C# OOP\Inheritence\Inheritence\obj\Debug\netcoreapp3.1\Inheritence.genruntimeconfig.cache

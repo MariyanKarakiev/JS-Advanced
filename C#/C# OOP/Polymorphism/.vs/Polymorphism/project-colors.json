@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d0262ac5-73ec-45df-9311-2e32eba4feea": {
+      "ProjectGuid": "d0262ac5-73ec-45df-9311-2e32eba4feea",
+      "DisplayName": "Polymorphism",
+      "ColorIndex": 0
+    },
+    "f18bdce3-cfa5-4352-b37c-64246f4e9c2c": {
+      "ProjectGuid": "f18bdce3-cfa5-4352-b37c-64246f4e9c2c",
+      "DisplayName": "Raiding",
+      "ColorIndex": 1
+    },
+    "cb549dfa-b454-4ecd-b6fb-a92d16025608": {
+      "ProjectGuid": "cb549dfa-b454-4ecd-b6fb-a92d16025608",
+      "DisplayName": "WildFarm",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

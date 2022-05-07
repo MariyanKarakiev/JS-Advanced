@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritence", "Inheritence\Inheritence.csproj", "{57D76067-6DF2-40D2-A588-F2872B442A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRandomList", "CustomRandomList\CustomRandomList.csproj", "{3C5D8EEF-A927-413E-ADEB-05AC4C030257}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57D76067-6DF2-40D2-A588-F2872B442A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D76067-6DF2-40D2-A588-F2872B442A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D76067-6DF2-40D2-A588-F2872B442A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D76067-6DF2-40D2-A588-F2872B442A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5D8EEF-A927-413E-ADEB-05AC4C030257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5D8EEF-A927-413E-ADEB-05AC4C030257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5D8EEF-A927-413E-ADEB-05AC4C030257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5D8EEF-A927-413E-ADEB-05AC4C030257}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC8F3D78-38F4-4F2F-AEED-27D93A64C657}
+	EndGlobalSection
+EndGlobal

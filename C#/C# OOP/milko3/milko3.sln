@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milko3", "milko3\milko3.csproj", "{D96398D4-2F2F-4DD0-82DB-380A86E2A064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D96398D4-2F2F-4DD0-82DB-380A86E2A064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96398D4-2F2F-4DD0-82DB-380A86E2A064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96398D4-2F2F-4DD0-82DB-380A86E2A064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96398D4-2F2F-4DD0-82DB-380A86E2A064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64905AF3-7891-4CAD-A4C8-B504DE95D217}
+	EndGlobalSection
+EndGlobal
