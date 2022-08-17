@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace Building
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int floors = int.Parse(Console.ReadLine());
+            int rooms = int.Parse(Console.ReadLine());
+            for (int i = floors; i >= 1; i--)
+            {
+                Console.WriteLine();
+                for (int p = 0; p < rooms ; p++)
+                {
+                    if (i == floors)
+                    {
+                        Console.Write($"L{i}{p} ");
+                    }
+                    else if (i % 2 != 0)
+                    {
+                        Console.Write($"A{i}{p} ");
+                    }
+                    else if (i % 2 == 0)
+                    {
+                        Console.Write($"O{i}{p} ");
+                    }
+                   
+                }
+            }
+        }
+    }
+}
