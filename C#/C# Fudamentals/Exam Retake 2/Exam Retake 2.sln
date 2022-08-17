@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam Retake 2", "Exam Retake 2\Exam Retake 2.csproj", "{94131B7B-6A5F-4FA5-BC05-DD7E6F399F99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "зад2", "зад2\зад2.csproj", "{5A097429-4574-4384-8135-276A5C59531C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94131B7B-6A5F-4FA5-BC05-DD7E6F399F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94131B7B-6A5F-4FA5-BC05-DD7E6F399F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94131B7B-6A5F-4FA5-BC05-DD7E6F399F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94131B7B-6A5F-4FA5-BC05-DD7E6F399F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A097429-4574-4384-8135-276A5C59531C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A097429-4574-4384-8135-276A5C59531C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A097429-4574-4384-8135-276A5C59531C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A097429-4574-4384-8135-276A5C59531C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {745904F5-8F80-4752-950B-A56149329237}
+	EndGlobalSection
+EndGlobal
